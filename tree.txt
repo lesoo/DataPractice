@@ -1,0 +1,25 @@
+digraph Tree {
+node [shape=box, fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="LeadTime <= 14.5\ngini = 0.4\nsamples = 20030\nvalue = [14500, 5530]\nclass = cancel_no"] ;
+1 [label="car_yes <= 0.5\ngini = 0.165\nsamples = 5689\nvalue = [5173, 516]\nclass = cancel_no"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="LeadTime <= 7.5\ngini = 0.205\nsamples = 4445\nvalue = [3929, 516]\nclass = cancel_no"] ;
+1 -> 2 ;
+3 [label="gini = 0.161\nsamples = 3462\nvalue = [3157, 305]\nclass = cancel_no"] ;
+2 -> 3 ;
+4 [label="gini = 0.337\nsamples = 983\nvalue = [772, 211]\nclass = cancel_no"] ;
+2 -> 4 ;
+5 [label="gini = 0.0\nsamples = 1244\nvalue = [1244, 0]\nclass = cancel_no"] ;
+1 -> 5 ;
+6 [label="car_yes <= 0.5\ngini = 0.455\nsamples = 14341\nvalue = [9327, 5014]\nclass = cancel_no"] ;
+0 -> 6 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+7 [label="RA_Changed <= 0.5\ngini = 0.476\nsamples = 12809\nvalue = [7795, 5014]\nclass = cancel_no"] ;
+6 -> 7 ;
+8 [label="gini = 0.492\nsamples = 11183\nvalue = [6278, 4905]\nclass = cancel_no"] ;
+7 -> 8 ;
+9 [label="gini = 0.125\nsamples = 1626\nvalue = [1517, 109]\nclass = cancel_no"] ;
+7 -> 9 ;
+10 [label="gini = 0.0\nsamples = 1532\nvalue = [1532, 0]\nclass = cancel_no"] ;
+6 -> 10 ;
+}
